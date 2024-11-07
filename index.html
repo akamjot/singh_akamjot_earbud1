@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pulsebeats earbuds</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet"/>
+    <!-- link to greensock main library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  </head>
+  <body>
+    <model-viewer id="model" src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbud.usdz" camera-controls poster="img/poster.webp" shadow-intensity="1" environment-image="img/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+
+        <button class="Hotspot" slot="hotspot-1" data-position="0.27713778123445654m 1.9473719150009365m 0.9502291248860285m" data-normal="-0.0006074349516877722m -0.00013024585684136454m 0.9999998070293796m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Pulsebeats, Feel the pulse</div>
+        </button><button class="Hotspot" slot="hotspot-3" data-position="0.044685282047907365m 2.1299881740783424m -0.7803792236094835m" data-normal="-0.038776613947794206m -0.02523959092119121m -0.9989290952119049m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Charging points,
+                battery lasts upto 24 hours</div>
+        </button><button class="Hotspot" slot="hotspot-4" data-position="0.09875321091558492m 0.3829470491718949m -1.440037145172456m" data-normal="0.02788661683978198m -0.3795313908814674m -0.9247584873559206m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Premium quality soft buds</div>
+        </button><button class="Hotspot" slot="hotspot-6" data-position="-0.8474137094646174m 1.7631656430527323m 0.5378776160011576m" data-normal="-0.944752505985919m -0.01094719336021581m 0.3276016809951689m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Mirophone with noise cancelation features</div>
+        </button>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="img/ar_hand_prompt.png">
+        </div>
+
+    </model-viewer>  
+  <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
