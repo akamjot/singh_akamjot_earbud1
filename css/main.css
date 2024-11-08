@@ -33,10 +33,9 @@ model-viewer {
   color: rgba(0, 0, 0, 0.8);
   display: block;
   font-family: Futura, Helvetica Neue, sans-serif;
-  font-size: 18px;
   font-weight: 700;
   left: calc(100% + 1em);
-  max-width: 128px;
+  max-width: 200px;
   overflow-wrap: break-word;
   padding: 0.5em 1em;
   position: absolute;
@@ -44,15 +43,21 @@ model-viewer {
   width: max-content;
 }
 
-.HotspotAnnotation p {
-  color: #333;
-  line-height: 22px;
-  font-weight: 300;
+.HotspotAnnotation h2 {
+  size: 18px; /* Set desired size for the h2 text */
+  font-weight: bold;
+  margin: 0;
 }
 
-.HotspotAnnotation h2 {
-  font-size: 18px;
-  margin-bottom: 5px;
+.HotspotAnnotation p {
+  font-size: 14px; /* Set desired size for the paragraph text */
+  margin: 5px 0;
+}
+
+.HotspotAnnotation img {
+  width: 190px; /* Set width based on layout */
+  height: auto;
+  margin-top: 5px;
 }
 
 model-viewer::part(default-progress-bar) {
