@@ -1,26 +1,22 @@
 (() => {
     console.log("IIFE Fired");
 
-
-    
     
   //variables
     const hotspots = document.querySelectorAll(".Hotspot");
-    //console.log(hotspots);
-  
+
   
     //functions
   
     function showInfo(e) {
-      //console.log("showInfo called");
-      //console.log(e.currentTarget.slot);
+
       let selected = document.querySelector(`button[slot="${e.currentTarget.slot}"] > div`);
-      //console.log(selected);
+
       gsap.to(selected, 1, {autoAlpha: 1});
     }
   
     function hideInfo(e) {
-      //console.log("hideInfo called");
+
       let selected = document.querySelector(`button[slot="${e.currentTarget.slot}"] > div`);
       gsap.to(selected, 1, {autoAlpha: 0});
     }
@@ -31,4 +27,44 @@
       hotspot.addEventListener("mouseout", hideInfo);
     });
   
+
+
+  const hotspot = [
+    {
+        id: 'hotspot1',
+        h2: 'Pulsebeats',
+        p: 'Feel the pulse',
+        img: 'img/EARBUDS.jpg',
+    },
+    {
+        id: 'hotspot2',
+        h2: 'Charging Points',
+        p: 'Battery lasts up to 24 hours',
+    },
+    {
+        id: 'hotspot3',
+        h2: 'Premium Quality',
+        p: 'Soft buds for comfort',
+    },
+    {
+        id: 'hotspot4',
+        h2: 'Microphone',
+        p: 'With noise cancellation features',
+    }
+];
+
+// Function to set header and text
+hotspot.forEach(hotspot => {
+    const button = document.getElementById(hotspot.id);
+    if (button) {
+        button.innerHTML = `
+            <div class="HotspotAnnotation">
+                ${hotspot.img ? `<img src="${hotspot.img}" alt="${hotspot.h2} image">` : ''}<br>
+                <strong>${hotspot.h2}</strong><br>
+                ${hotspot.p}
+            </div>
+        `;
+    }
+});
+
   })();
