@@ -1,0 +1,22 @@
+@use '../abstracts' as a;
+
+
+footer section {
+    @include a.flex-space-between;
+}
+
+.footer-logo {
+    width: 150px;
+    height: 150px;
+}
+
+footer nav ul li {
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    padding-right: 50px;
+    
+}
