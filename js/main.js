@@ -67,4 +67,16 @@ hotspot.forEach(hotspot => {
     }
 });
 
+    const divisor = document.querySelector('#divisor');
+    const slider = document.querySelector('#slider');
+    const xray = document.querySelector('#xray');
+
+    function moveDivisor() {
+        console.log(slider.value);
+        divisor.style.width = slider.value + '%';
+
+    }
+
+    slider.addEventListener("input", moveDivisor);
+
   })();
