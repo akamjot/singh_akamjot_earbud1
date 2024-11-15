@@ -2,12 +2,12 @@
 
 
 footer section {
-    @include a.flex-space-between;
+    @include a.flex-just-space-between;
 }
 
 .footer-logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 footer nav ul li {
