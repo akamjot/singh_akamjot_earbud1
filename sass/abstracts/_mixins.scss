@@ -18,6 +18,11 @@
       justify-content: space-between;
       align-items: center;
 }
+
+@mixin flex-just-space-between {
+      display: flex;
+      justify-content: space-between;
+}
     
 @mixin flex-center-column {
       @include flex-center;
