@@ -1,12 +1,17 @@
 @use '../abstracts' as a;
 
+header {
+    background-color: black;
+    height: 100px;
+}
+
 header section{
     @include a.flex-space-between;   
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 
 header nav ul li {
@@ -16,5 +21,14 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    padding-right: 50px;
+    padding-right: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    header nav ul li a {
+        padding-right: 50px;
+    }
+
 }

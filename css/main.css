@@ -1,3 +1,16 @@
+@font-face {
+  font-family: cantarellregular;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/cantarell_regular-webfont.ttf") format("ttf");
+}
+body {
+  font-family: "manrope", arial, sans-serif;
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 model-viewer {
   width: auto;
   max-width: 1200px;
@@ -65,6 +78,11 @@ model-viewer::part(default-progress-bar) {
   background: #e83636;
 }
 
+header {
+  background-color: black;
+  height: 100px;
+}
+
 header section {
   display: flex;
   justify-content: space-between;
@@ -72,8 +90,8 @@ header section {
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 header nav ul li {
@@ -83,9 +101,16 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  padding-right: 50px;
+  padding-right: 20px;
+  color: white;
+  font-size: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  header nav ul li a {
+    padding-right: 50px;
+  }
+}
 footer section {
   display: flex;
   justify-content: space-between;
@@ -177,7 +202,7 @@ footer nav ul li a {
     background-image: url("../images/left-right-slider.svg");
   }
   input[type=range]:focus::-moz-range-thumb {
-    background-image: url("../inages/left-right-slider.svg");
+    background-image: url("../images/left-right-slider.svg");
   }
 }
 #animation-view {

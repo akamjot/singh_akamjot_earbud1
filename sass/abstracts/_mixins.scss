@@ -38,3 +38,15 @@
       display: flex;
       justify-content: center;
 }
+
+@mixin fontFace($font-family, $file-path) {
+      @font-face {
+          font: {
+              family: $font-family;
+              weight: normal;
+              style: normal;
+          }
+          //Modern Browsers
+          src: url('#{$file-path}.ttf') format('ttf')
+      }
+}
