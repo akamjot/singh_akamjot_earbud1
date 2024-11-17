@@ -1,0 +1,8 @@
+@use '../abstracts' as a;
+
+body {
+    font-family: a.$body-font-family;
+    color: a.$body-text-color;
+    font-size: a.$base-font-size;
+    font-weight: a.$base-font-weight;
+}
