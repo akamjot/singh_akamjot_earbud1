@@ -1,12 +1,61 @@
 (() => {
     console.log("IIFE Fired");
 
-    
-  //variables
-    const hotspots = document.querySelectorAll(".Hotspot");
+    // Animation
 
-  
-    //functions
+    const canvas = document.querySelector("#animation-view");
+    const context = canvas.getContext("2d");
+
+    canvas.width = 1920;
+    canvas.height = 1080;
+
+    const frameCount = 185; //how many frame do we have
+
+    const images = [];  //array to hold all images
+
+    //create an object called buds to hold the current frame 
+    const buds = {
+        frame: 0
+    }
+
+    // run a for loop to populate image array
+    for(let i =0; i < frameCount; i++){
+        const img = new Image();
+        img.src =`images/Untitled${(i + 1).toString().padStart(4, '0')}.png`;
+        images.push(img)
+
+    }
+
+    // console.table(images);
+
+    gsap.to(buds, {
+        frame: 184,
+        snap: "frame",
+        scrollTrigger: {
+            trigger: "#animation-view",
+            pin: true,
+            scrub: 1,
+            markers: false,
+            start: "top top"
+        },
+        onUpdate: render
+    })
+    images[0].addEventListener("load", render);
+
+    function render(){
+        context.clearRect(0,0, canvas.width, canvas.height);
+        // console.log(buds.frame);
+        console.log(images[buds.frame]);
+        context.drawImage(images[buds.frame], 0, 0);
+    }
+
+
+
+
+  //3D model view 
+
+
+    const hotspots = document.querySelectorAll(".Hotspot");
   
     function showInfo(e) {
 
@@ -21,13 +70,13 @@
       gsap.to(selected, 1, {autoAlpha: 0});
     }
   
-    //eventlisteners
     hotspots.forEach(hotspot => {
       hotspot.addEventListener("mouseover", showInfo);
       hotspot.addEventListener("mouseout", hideInfo);
     });
   
 
+  //3d model view arrey
 
   const hotspot = [
     {
@@ -54,6 +103,7 @@
 ];
 
 // Function to set header and text
+
 hotspot.forEach(hotspot => {
     const button = document.getElementById(hotspot.id);
     if (button) {
@@ -67,6 +117,9 @@ hotspot.forEach(hotspot => {
     }
 });
 
+
+//Slider functionality
+
     const divisor = document.querySelector('#divisor');
     const slider = document.querySelector('#slider');
     const xray = document.querySelector('#xray');
@@ -78,5 +131,8 @@ hotspot.forEach(hotspot => {
     }
 
     slider.addEventListener("input", moveDivisor);
+
+
+
 
   })();

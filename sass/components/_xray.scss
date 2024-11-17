@@ -15,7 +15,7 @@
   #xray {
       position: relative;
       aspect-ratio: 16/10;
-      background-image: url("../img/x-ray.png");
+      background-image: url("../images/x-ray.png");
       background-size: cover;
   }
 
@@ -23,7 +23,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-image: url("../img/x-ray-filled.png");
+      background-image: url("../images/x-ray-filled.png");
       background-size: cover;
       height: 100%;
       width: 50%;
@@ -33,8 +33,8 @@
     -moz-appearance: none;
     appearance: none;
     position: relative;
-    top: -18px;
-    left: -2%;
+    top: -45px;
+    left: -.5%;
     background-color: rgba(255, 255, 255, 0.1);
     width: 102%;
   }
@@ -44,14 +44,14 @@
   }
 
   input[type=range]::-moz-range-track {
-    height: 15px;
+    height: 35px;
     width: 98%;
     background-color: rgba(255, 255, 255, 0.1);
     position: relative;
     outline: none;
   }
 
-  input[type=range]::active {
+  input[type=range]:active {
     border: none;
     outline: none;
   }
@@ -59,27 +59,28 @@
   input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 15px;
-    background: #fff;
+    background-image: url("../images/left-right-slider.svg");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 45px;
     border-radius: 0;
   }
 
   input[type=range]::-moz-range-thumb {
     -moz-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 15px;
-    background: #fff;
+    background-image: url("../images/left-right-slider.svg");
+    width: 60px;
+    height: 45px;
     border-radius: 0;
   }
 
   input[type=range]:focus::-webkit-slider-thumb {
-    background: rgba(255, 255, 255, 0.5);
+    background-image: url("../images/left-right-slider.svg");
   }
 
   input[type=range]:focus::-moz-range-thumb {
-    background: rgba(255, 255, 255, 0.5);
+    background-image: url("../inages/left-right-slider.svg");
   }
 
 }

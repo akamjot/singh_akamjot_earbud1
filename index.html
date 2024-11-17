@@ -14,7 +14,7 @@
     <header class="grid-con">
       <section class="col-span-full m-col-start-2 m-col-end-12">
 
-        <img src="img/logo.svg" alt="logo" class="logo">
+        <img src="images/logo.svg" alt="logo" class="logo">
 
         <nav>
           <ul>
@@ -28,6 +28,12 @@
     </header>
 
     <main>
+
+      <section class="grid-con">
+      <div class="col-span-full">
+        <canvas id="animation-view"></canvas> 
+      </div>
+      </section>
 
       <section class="grid-con">
         <div class="col-span-full m-col-span-full headings" >
@@ -48,8 +54,8 @@
         <div class="col-span-full">
 
           <div id="mobile-tablet-view">
-              <img src="img/x-ray.png" alt="x-ray view of the earbud">
-              <img src="img/x-ray-filled.png" alt="regular view">
+              <img src="images/x-ray.png" alt="x-ray view of the earbud">
+              <img src="images/x-ray-filled.png" alt="regular view">
           </div>
           <div id="comparison-con">
               <div id="xray">
@@ -70,7 +76,7 @@
     <!-- <section class="grid-con">
 
       <div class="col-span-full m-col-span-full">
-    <model-viewer id="model" src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbud.usdz" camera-controls poster="img/poster.webp" shadow-intensity="1" environment-image="img/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+    <model-viewer id="model" src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbud.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
 
         <button id="hotspot1" class="Hotspot" slot="hotspot-1" data-position="0.27713778123445654m 1.9473719150009365m 0.9502291248860285m" data-normal="-0.0006074349516877722m -0.00013024585684136454m 0.9999998070293796m" data-visibility-attribute="visible">
             <div class="HotspotAnnotation"></div>
@@ -91,7 +97,7 @@
             View in your space
         </button>
         <div id="ar-prompt">
-            <img src="img/ar_hand_prompt.png">
+            <images src="images/ar_hand_prompt.png">
         </div>
 
     </model-viewer> 
@@ -115,7 +121,7 @@
           </ul>
         </nav>
 
-        <img src="img/logo.svg" alt="logo" class="footer-logo">
+        <img src="images/logo.svg" alt="logo" class="footer-logo">
 
       </section>
 
@@ -123,6 +129,9 @@
 
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    
     <script src="js/main.js"></script>
   </body>
 </html>
