@@ -1,0 +1,35 @@
+@use '../abstracts' as a;
+
+#form {
+    @include a.flex-column;
+    margin-top: 30px;
+}
+
+#form input, textarea {
+    padding: 22px;
+    border: 2px solid #d6d6d6;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font: inherit;
+    width: 90%;
+    margin-left: 5%;
+ }
+
+ #form textarea {
+    height: 250px;
+ }
+
+ #form input[type="submit"] {
+    padding: 12px 28px;
+    background: a.$secondary-color;
+    color: #fff;
+    border: none;
+    transition: all 200ms ease-in;
+ }
+
+ #form input[type="submit"]:hover {
+    background-color: #626262;
+    border-radius: 0;
+ }
