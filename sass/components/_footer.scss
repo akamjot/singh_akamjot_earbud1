@@ -2,24 +2,14 @@
 
 
 footer {
-    position: relative;
     background-color:  #A2B5BB; /* Keep solid color as a base */
     
 }
 
-footer::before {
-    content: "";
-    position: absolute;
-    top: 10%;
-    left: 0;
-    width: 100%;
-    height: 80%;
-    background-image: url("../images/logo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.1;
-    z-index: 1;
-    pointer-events: none; 
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
 }
 
 footer section {
@@ -43,4 +33,5 @@ footer p {
     text-align: center;
     margin-top: -10px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
