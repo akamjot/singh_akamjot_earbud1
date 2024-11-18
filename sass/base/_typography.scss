@@ -6,3 +6,9 @@ body {
     font-size: a.$base-font-size;
     font-weight: a.$base-font-weight;
 }
+
+h2 {
+    font-family: a.$heading-font-family;
+    font-size: 40px;
+    font-weight: bold;
+}

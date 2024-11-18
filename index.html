@@ -29,13 +29,9 @@
 
     <main>
 
-      <section class="grid-con">
-      <div class="col-span-full">
-        <canvas id="animation-view"></canvas> 
-      </div>
-      </section>
+      
 
-      <section class="grid-con">
+      <section class="grid-con about-pulsebeats">
         <div class="col-span-full m-col-span-full headings" >
           <h2>Pulsebeats</h2>
           <p>Feel the pulse</p>
@@ -48,6 +44,12 @@
 
 
       </section>
+
+      <section class="grid-con">
+        <div class="col-span-full animation">
+          <canvas id="animation-view"></canvas> 
+        </div>
+        </section>
 
       <section class="grid-con slider">
 
@@ -73,7 +75,7 @@
 
 
 
-    <section class="grid-con">
+    <section class="grid-con model-view">
 
       <div class="col-span-full m-col-span-full">
     <model-viewer id="model" src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbud.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
@@ -104,6 +106,25 @@
 
   </div>
   </section> 
+
+  <section class="grid-con contact">
+
+    <div class="col-span-full m-col-start-1 m-col-end-7">
+      <h2>Contact</h2>
+    </div>
+
+    <div id="form" class="contact-container col-span-full m-col-start-7 m-col-end-13">
+
+      <form action="#" method="post" enctype="text/plain">
+          <input name="fullName" type="text" required placeholder="First & Last Name">
+          <input name="email" type="text" required placeholder="E-mail">
+          <textarea name="msg" placeholder="Enter your message, comments or concerns here..."></textarea>
+          <input name="submit" type="submit" value="Submit">
+      </form>
+
+  </div>
+
+  </section>
   
 
   </main>
