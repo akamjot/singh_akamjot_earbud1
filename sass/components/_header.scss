@@ -1,8 +1,11 @@
 @use '../abstracts' as a;
 
 header {
-    background-color: black;
+    background-color: rgb(193, 191, 191);
     height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 header section{
@@ -22,8 +25,9 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     padding-right: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
+    font-weight: bolder;
 }
 
 @media screen and (min-width: 768px) {
