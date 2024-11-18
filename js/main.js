@@ -83,7 +83,7 @@
         id: 'hotspot1',
         h2: 'Pulsebeats',
         p: 'Feel the pulse',
-        img: 'img/EARBUDS.jpg',
+        image: 'images/EARBUDS.jpg',
     },
     {
         id: 'hotspot2',
@@ -109,7 +109,7 @@ hotspot.forEach(hotspot => {
     if (button) {
         button.innerHTML = `
             <div class="HotspotAnnotation">
-                ${hotspot.img ? `<img src="${hotspot.img}" alt="${hotspot.h2} image">` : ''}<br>
+                ${hotspot.image ? `<img src="${hotspot.image}" alt="${hotspot.h2} image">` : ''}<br>
                 <strong>${hotspot.h2}</strong><br>
                 ${hotspot.p}
             </div>
