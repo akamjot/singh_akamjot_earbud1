@@ -131,37 +131,62 @@ header nav ul li a {
 }
 footer {
   background-color: #A2B5BB; /* Keep solid color as a base */
+  bottom: 0;
 }
 
 .footer-logo {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   margin-top: 20px;
 }
 
-footer section {
-  display: flex;
-  justify-content: space-between;
+footer nav {
+  margin-top: 20px;
 }
 
-footer nav ul li {
+footer nav li {
   list-style: none;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
-footer nav ul li a {
+footer nav li a {
   text-decoration: none;
   padding-right: 50px;
   color: black;
 }
 
-footer p {
-  text-align: center;
-  margin-top: -10px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.logo-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+#icons {
+  margin-top: 10px;
+}
+
+#icons a {
+  color: black;
+  margin-right: 5px;
+}
+
+footer p {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  footer nav li {
+    text-align: left;
+  }
+}
 #comparison-con {
   display: none;
 }
@@ -236,18 +261,22 @@ footer p {
     background-image: url("../images/left-right-slider.svg");
   }
 }
-.animation {
-  margin: 0;
-  top: 0;
-}
-
 #animation-view {
   max-width: 100%;
   left: 0;
   right: 0;
+  background-color: black;
   /* width: 100vw; */
 }
 
+@media screen and (min-width: 768px) {
+  #animation-view {
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    /* width: 100vw; */
+  }
+}
 #form {
   display: flex;
   flex-direction: column;
@@ -287,6 +316,18 @@ footer p {
   text-align: center;
 }
 
-.contact, .about-pulsebeats {
+.headings p {
+  margin-top: -25px;
+}
+
+body {
+  background-color: #CFD2CF;
+}
+
+.about-pulsebeats img {
+  background-color: black;
+}
+
+.contact {
   background-color: #CFD2CF;
 }
