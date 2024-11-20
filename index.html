@@ -4,6 +4,7 @@
     <title>Pulsebeats earbuds</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/main.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/grid.css">
     <!-- link to greensock main library -->
@@ -16,11 +17,13 @@
 
         <img src="images/logo.svg" alt="logo" class="logo">
 
+        
+
         <nav>
           <ul>
             <li><a href="#">HOME</a></li>
-            <li><a href="#">ACCESSORIES</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">X-RAY</a></li>
+            <li><a href="#">3D-VIEW</a></li>
           </ul>
         </nav>
 
@@ -32,9 +35,14 @@
       
 
       <section class="grid-con about-pulsebeats">
+
+        <div class="col-span-full m-col-span-full">
+          <img src="images/blue-earbud.png" alt="Earbuds">
+        </div>
+
         <div class="col-span-full m-col-span-full headings" >
           <h2>Pulsebeats</h2>
-          <p>Feel the pulse</p>
+          <p>FEEL THE PULSE</p>
         </div>
 
         <div class="col-span-full m-col-start-3 m-col-end-11">
@@ -45,8 +53,8 @@
 
       </section>
 
-      <section class="grid-con">
-        <div class="col-span-full animation">
+      <section>
+        <div class="col-span-full">
           <canvas id="animation-view"></canvas> 
         </div>
         </section>
@@ -133,28 +141,37 @@
     <footer >
       <section class="grid-con">
 
-        <div class="col-span-full col-start-1 m-col-end-3">
+        <div class="logo-icons col-span-full m-col-start-1 m-col-end-5">
+        <div class="col-span-full m-col-start-1 m-col-end-5">
           <img src="images/logo.svg" alt="footer logo" class="footer-logo">
         </div>
+
+        <div id="icons">
+        
+          <a href="www.google.com"><li class="fa fa-facebook"></li></a>
+          <a href=""><li class="fa fa-linkedin"></li></a>
+          <a href=""><li class="fa fa-github"></li></a>
+          <a href=""><li class="fa fa-instagram"></li></a>
+  
+        </div>
+      </div>
         
 
-        <div class="col-span-full m-col-start-6 m-col-end-8">
+        <div class="col-start-1 col-end-3 m-col-start-7 m-col-end-10">
         <nav>
-          <ul>
+
             <li><a href="#">Home</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+            <li><a href="#">x-ray</a></li>
+            <li><a href="#">3d-view</a></li>
+
         </nav>
         
       </div>
-      <div class="col-span-full m-col-start-10 m-col-end-12">
+      <div class="col-start-3 col-end-5 m-col-start-10 m-col-end-13">
         <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Stories</a></li>
         </nav>
         
       </div>
@@ -162,8 +179,7 @@
     </section>
 
     <div class="col-span-full m-col-span-full">
-      <p>All rights reserved</p>
-      <p>&copy; Pulsebeats 2023</p>
+      <p>All rights reserved. &copy; Pulsebeats 2023</p>
     </div>
 
     </footer>
