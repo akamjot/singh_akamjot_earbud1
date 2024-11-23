@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <header class="grid-con">
+    <header class="grid-con" id="main-header">
       <section class="col-span-full m-col-start-2 m-col-end-12">
 
         <img src="images/logo.svg" alt="logo" class="logo">
@@ -21,9 +21,9 @@
 
         <nav>
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">X-RAY</a></li>
-            <li><a href="#">3D-VIEW</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#x-ray">X-RAY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
 
@@ -34,7 +34,7 @@
 
       
 
-      <section class="grid-con about-pulsebeats">
+      <section class="grid-con about-pulsebeats" id="home">
 
         <div class="col-span-full m-col-span-full">
           <img src="images/blue-earbud.png" alt="Earbuds">
@@ -53,13 +53,26 @@
 
       </section>
 
-      <section>
+      <section class="grid-con">
         <div class="col-span-full">
           <canvas id="animation-view"></canvas> 
         </div>
         </section>
 
-      <section class="grid-con slider">
+      <section class="grid-con about-case">
+
+        <h2 class="col-span-full m-col-span-full">EARBUD CASE</h2>
+
+        <div class="col-span-full m-col-start-3 m-col-end-11">
+          <p>The Pulsebeats earbuds case is a perfect blend of style, durability, and functionality. Its sleek white finish exudes elegance, complementing any lifestyle, while the minimalist design with smooth edges adds a touch of sophistication. Compact and lightweight, the case easily fits into your pocket or bag, making it a convenient companion for your daily adventures. Crafted from high-quality materials, it resists scratches and ensures durability for long-term use.</p>
+
+            <p>Designed with practicality in mind, the case features a magnetic lid closure, securing your earbuds while preventing accidental openings. The LED battery indicator keeps you informed of the case's charge status at a glance. Equipped with fast charging capabilities, the case provides multiple full charges for your earbuds, ensuring up to XX additional hours of playtime. It supports both USB-C and wireless charging, offering modern and hassle-free options to keep you connected.</p>
+            
+           <p> The signature Pulsebeats logo is embossed on the case, reflecting the brand's identity, while the tagline “Feel the Pulse” is subtly engraved for a premium touch. Whether you're on the go or unwinding at home, this stylish case ensures your earbuds are always ready to deliver an unparalleled listening experience. Experience the perfect harmony of form and function with Pulsebeats.</p>
+        </div>
+      </section>
+
+      <section class="grid-con slider xray" id="x-ray">
 
         <div class="col-span-full">
 
@@ -81,24 +94,37 @@
 
       </section>
 
+      <section class="grid-con about-xray">
+
+        <h2 class="col-span-full m-col-span-full">X-RAY</h2>
+
+        <div class="col-span-full m-col-start-3 m-col-end-11">
+          <p>The X-ray view of Pulsebeats reveals the seamless integration of innovation and precision engineering. Every component is carefully designed to deliver unmatched audio quality and functionality. The high-performance drivers, housed within an ergonomic structure, produce deep bass and crystal-clear sound across all frequencies.</p>
+
+            <p> The advanced chipset ensures stable Bluetooth connectivity, enabling smooth pairing and lag-free audio streaming. Compact yet powerful, the built-in battery guarantees extended playtime, so your music lasts as long as your day. A noise-canceling microphone is strategically placed to enhance call clarity and block out unwanted background noise.</p>
+            
+          <p>  Encased within a lightweight yet durable frame, these earbuds are designed to handle everyday wear and tear while maintaining peak performance. This X-ray view is a testament to our commitment to transparency and quality, offering a glimpse of the cutting-edge technology that drives Pulsebeats. Experience the science behind the sound and truly “Feel the Pulse.”</p>
+        </div>
+      </section>
+
 
 
     <section class="grid-con model-view">
 
       <div class="col-span-full m-col-span-full">
-    <model-viewer id="model" src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbud.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+    <model-viewer id="model" src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbud.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg" camera-controls touch-action="pan-y" disable-zoom src="model/earbud.gltf" >
 
-        <button id="hotspot1" class="Hotspot" slot="hotspot-1" data-position="0.27713778123445654m 1.9473719150009365m 0.9502291248860285m" data-normal="-0.0006074349516877722m -0.00013024585684136454m 0.9999998070293796m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation"></div>
+        <button  class="Hotspot" slot="hotspot-1" data-position="0.27713778123445654m 1.9473719150009365m 0.9502291248860285m" data-normal="-0.0006074349516877722m -0.00013024585684136454m 0.9999998070293796m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-1"></div>
         </button>
-        <button id="hotspot2" class="Hotspot" slot="hotspot-3" data-position="0.044685282047907365m 2.1299881740783424m -0.7803792236094835m" data-normal="-0.038776613947794206m -0.02523959092119121m -0.9989290952119049m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation"></div>
+        <button  class="Hotspot" slot="hotspot-2" data-position="0.044685282047907365m 2.1299881740783424m -0.7803792236094835m" data-normal="-0.038776613947794206m -0.02523959092119121m -0.9989290952119049m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-2"></div>
         </button>
-        <button id="hotspot3" class="Hotspot" slot="hotspot-4" data-position="0.09875321091558492m 0.3829470491718949m -1.440037145172456m" data-normal="0.02788661683978198m -0.3795313908814674m -0.9247584873559206m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation"></div>
+        <button class="Hotspot" slot="hotspot-3" data-position="0.09875321091558492m 0.3829470491718949m -1.440037145172456m" data-normal="0.02788661683978198m -0.3795313908814674m -0.9247584873559206m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-3" ></div>
         </button>
-        <button id="hotspot4" class="Hotspot" slot="hotspot-6" data-position="-0.8474137094646174m 1.7631656430527323m 0.5378776160011576m" data-normal="-0.944752505985919m -0.01094719336021581m 0.3276016809951689m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation"></div>
+        <button  class="Hotspot" slot="hotspot-4" data-position="-0.8474137094646174m 1.7631656430527323m 0.5378776160011576m" data-normal="-0.944752505985919m -0.01094719336021581m 0.3276016809951689m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-4"></div>
         </button>
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
@@ -112,13 +138,21 @@
 
     </model-viewer> 
 
+    
+
   </div>
   </section> 
 
-  <section class="grid-con contact">
+  <section class="grid-con contact" id="contact">
+
+    <div class="col-span-full m-col-span-full">
+      <h2>Contact</h2>
+    </div>
 
     <div class="col-span-full m-col-start-1 m-col-end-7">
-      <h2>Contact</h2>
+      <p>Email - pulsebeat123@gmail.com</p>
+      <p>Phone - 123-456-789</p>
+      <p>Address - 123 Main St, Anytown, USA</p>
     </div>
 
     <div id="form" class="contact-container col-span-full m-col-start-7 m-col-end-13">
@@ -160,9 +194,9 @@
         <div class="col-start-1 col-end-3 m-col-start-7 m-col-end-10">
         <nav>
 
-            <li><a href="#">Home</a></li>
-            <li><a href="#">x-ray</a></li>
-            <li><a href="#">3d-view</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#x-ray">X-ray</a></li>
+            <li><a href="#contact">Contact</a></li>
 
         </nav>
         
@@ -186,7 +220,8 @@
 
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
     
     <script src="js/main.js"></script>
