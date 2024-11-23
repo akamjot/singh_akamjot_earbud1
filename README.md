@@ -1,17 +1,21 @@
 # PROJECT NAME
 
-### Earbuds website
+## Earbuds website
 
 # Website
+ In this website i implemented 
+ 1. A 3d-model of the earbuds that i created in cinema4d
+ 2. X-ray slider
+ 3. ScrollTrigger animation 
+ 4. Some other scroll driven animations
 
 
 # SOFTWARE USED 
 
 1. Adobe xd - wireframes
 2. Adobe illustrator - logo
-3. Cinema 4d - demo reel
-4. After affects - demo reel
-5. Visual Studio codes - coding
+3. Cinema 4d -  Earbuds design
+4. Visual Studio codes - coding
 
 # COMPUTER LANGUAGES USED
 
@@ -22,4 +26,4 @@
 
 # CREDITS 
 
-Youtube & Professors
+Youtube, Professors and Linkedin
